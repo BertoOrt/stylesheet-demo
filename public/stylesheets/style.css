@@ -1,8 +1,119 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:400,700);
+@import url(http://fonts.googleapis.com/css?family=Tillana:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-a {
-  color: #00B7FF;
-}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+main {
+  max-width: 750px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 3%; }
+
+html {
+  font-size: 1.063em; }
+
+body {
+  background-color: #E8FFF8;
+  font-family: EkMukta, serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #424830; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #474747;
+  font-family: Tillana, serif; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em; }
+
+h2 {
+  font-size: 2.369em; }
+
+h3 {
+  font-size: 1.777em; }
+
+h4 {
+  font-size: 1.333em; }
+
+h5, h6 {
+  font-weight: bold; }
+
+small, .font_small {
+  font-size: 0.75em; }
+
+table {
+  width: 100%; }
+  table thead {
+    background: #72AAD0; }
+  table tr:nth-child(2n+2) {
+    background: #D1F1FF; }
+
+input {
+  border: 1px solid rgba(102, 102, 102, 0.3); }
+
+a:link {
+  color: #40FD65; }
+
+a:visited {
+  color: #72AAD0; }
+
+a:hover {
+  color: #89DDFF; }
+
+ul {
+  list-style: inside lower-greek; }
+
+ol {
+  list-style: inside decimal; }

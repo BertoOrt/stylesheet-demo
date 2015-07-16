@@ -1,0 +1,10 @@
+table {
+  width: 100%;
+
+  thead {
+    background: $blue;
+  }
+  tr:nth-child(2n+2) {
+    background: $lightestblue;
+  }
+}
