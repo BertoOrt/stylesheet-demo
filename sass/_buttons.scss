@@ -1,0 +1,23 @@
+input[type='submit'], input[type=button], button {
+  width: 15%;
+  height: 30px;
+  color: $white;
+  background: $green;
+  border: 3px solid rgba($black, 0.3);
+}
+
+input[type='submit']:hover , input[type='button']:hover, button:hover {
+  width: 15%;
+  height: 30px;
+  color: $black;
+  background: rgba($lightblue, 0.7);
+  border: 3px solid rgba($black, 0.3);
+}
+
+input[type='submit']:active , input[type='button']:active, button:active {
+  width: 15%;
+  height: 30px;
+  color: $black;
+  background: $lightblue;
+  border: 3px solid $blue;
+}

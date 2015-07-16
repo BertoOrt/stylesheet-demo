@@ -16,13 +16,14 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input, textarea {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  outline: none; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -59,7 +60,7 @@ html {
 
 body {
   background-color: #E8FFF8;
-  font-family: EkMukta, serif;
+  font-family: Ek Mukta, serif;
   font-weight: 400;
   line-height: 1.45;
   color: #424830; }
@@ -100,8 +101,51 @@ table {
   table tr:nth-child(2n+2) {
     background: #D1F1FF; }
 
-input {
-  border: 1px solid rgba(102, 102, 102, 0.3); }
+input[type=text] {
+  border: 3px solid rgba(102, 102, 102, 0.3);
+  margin: 1%;
+  padding: 1%;
+  width: 30%;
+  transition: all 300ms ease; }
+
+input[type='text']:focus {
+  border: 3px solid #666;
+  box-shadow: 6px 6px 0px #72AAD0; }
+
+.title {
+  width: 100%; }
+
+label {
+  font-size: 120%;
+  margin: 1%; }
+
+textarea {
+  border: 3px solid rgba(102, 102, 102, 0.3);
+  margin: 1%;
+  width: 100%;
+  height: 300px; }
+
+textarea:focus {
+  border: 3px solid #666;
+  box-shadow: 6px 6px 0px #72AAD0;
+  transition: all 300ms ease; }
+
+select {
+  border: 3px solid rgba(102, 102, 102, 0.3);
+  margin: 1%;
+  height: auto;
+  width: 30%; }
+
+select:focus {
+  border: 3px solid #666;
+  box-shadow: 6px 6px 0px #72AAD0; }
+
+input[type='checkbox'] {
+  width: 20px;
+  position: relative;
+  margin: 20px auto; }
+  input[type='checkbox']:checked + label:after {
+    opacity: 1; }
 
 a:link {
   color: #40FD65; }
@@ -113,7 +157,28 @@ a:hover {
   color: #89DDFF; }
 
 ul {
-  list-style: inside lower-greek; }
+  list-style: inside circle; }
 
 ol {
   list-style: inside decimal; }
+
+input[type='submit'], input[type=button], button {
+  width: 15%;
+  height: 30px;
+  color: #EDFFF9;
+  background: #40FD65;
+  border: 3px solid rgba(102, 102, 102, 0.3); }
+
+input[type='submit']:hover, input[type='button']:hover, button:hover {
+  width: 15%;
+  height: 30px;
+  color: #666;
+  background: rgba(137, 221, 255, 0.7);
+  border: 3px solid rgba(102, 102, 102, 0.1); }
+
+input[type='submit']:active, input[type='button']:active, button:active {
+  width: 15%;
+  height: 30px;
+  color: #666;
+  background: #89DDFF;
+  border: 3px solid #72AAD0; }

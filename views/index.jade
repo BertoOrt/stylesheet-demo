@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
+  main
+    h1= title
+    .row
+      label Title 
+        input.title(type='text')
+      textarea
+      input(type='submit')
   

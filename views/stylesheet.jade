@@ -75,11 +75,11 @@ block content
       fieldset
         legend Gender
         p
-          input(type='radio')
+          input(type='radio' name="gender")
           label Male
-          input(type='radio')
+          input(type='radio' name="gender")
           label Female
-          input(type='radio')
+          input(type='radio' name="gender")
           label Other
       p
         label Country
@@ -88,7 +88,8 @@ block content
           option Canada
           option United States
       p
-        label Country
+        p 
+          label Country
         select(multiple='multiple')
           option New Zealand
           option Canada
