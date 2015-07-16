@@ -75,12 +75,18 @@ block content
       fieldset
         legend Gender
         p
-          input(type='radio' name="gender")
-          label Male
-          input(type='radio' name="gender")
-          label Female
-          input(type='radio' name="gender")
-          label Other
+          input(type='radio' name="gender" id="one")
+          label(for='one')
+            span
+            | Male
+          input(type='radio' name="gender" id='two')
+          label(for='two')
+            span
+            | Female
+          input(type='radio' name="gender" id="three")
+          label(for='three')
+            span
+            | Other
       p
         label Country
         select
@@ -95,8 +101,10 @@ block content
           option Canada
           option United States
       p
-        input(type='checkbox')
-        label Agree to Terms & Conditions
+        input#four(type='checkbox')
+        label(for='four')
+          span
+          |Agree to Terms & Conditions
       p
         label Message
         br

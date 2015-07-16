@@ -1,11 +1,17 @@
 extends layout
 
 block content
-  main
+  .banner
     h1= title
+  main
     .row
       label Title 
         input.title(type='text')
       textarea
+      p
+        input#four(type='checkbox')
+        label(for='four')
+          span
+          |Private
       input(type='submit')
   
